@@ -2,11 +2,11 @@
 
 ## Path Responsive Web Developer
 
-Learn and Practice Responsive Web Development by building 8 Websites with given Figma designs from [Legacy DevChallenges](https://legacy.devchallenges.io/paths/responsive-web-developer)
+Learn and Practice Responsive Web Development by building 8 Websites with given Figma designs from Legacy DevChallenges.
 
 
 ### **404 Not Found**    
-Challenge: Create a 404 not found page following the design.    
+    
 
 [live site](https://amansgz.github.io/css-404-not-found/) / [code](https://github.com/amansgz/css-404-not-found)     
  
@@ -14,7 +14,7 @@ Challenge: Create a 404 not found page following the design.
 
 
 ### **My Team Page**
-Challenge: Create my team page following the design.    
+A responsive team page built with HTML and modern CSS, using CSS Grid, variables, and fluid typography with clamp().
 
 [live site](https://amansgz.github.io/css-my-team-page/) / [code](https://github.com/amansgz/css-my-team-page) 
 
