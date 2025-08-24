@@ -6,7 +6,7 @@ Learn and Practice Responsive Web Development by building 8 Websites with given 
 
 
 ### **404 Not Found**    
-    
+A simple and responsive 404 Not Found page, built with HTML and CSS.
 
 [live site](https://amansgz.github.io/css-404-not-found/) / [code](https://github.com/amansgz/css-404-not-found)     
  
