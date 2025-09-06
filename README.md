@@ -14,4 +14,4 @@ Development by building 7 Websites from Legacy DevChallenges.
 ### **404 Not Found**    
 The goal was to create a user-friendly error page that provides a simple and helpful experience, guiding the user back to the main site.
 
-[live site](https://404-not-found-solution.netlify.app) / [code](https://github.com/amansgz/legacy-devchallenges-solutions/404-not-found)    
+[live site](https://404-not-found-solution.netlify.app) / [code](https://github.com/amansgz/legacy-devchallenges-solutions/404-page-challenge)    
