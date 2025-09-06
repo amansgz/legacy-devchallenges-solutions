@@ -22,7 +22,7 @@ This project is a modern and responsive solution to a 404 Not Found page challen
 
 ## Links
 
-- **Live Demo:** [404-not-found](404-not-found-solution.netlify.app)
+- **Live Demo:** [404-not-found](https://404-not-found-solution.netlify.app)
 
 ---
 
