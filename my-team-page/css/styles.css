@@ -1,0 +1,173 @@
+:root {
+  /* COLORS */
+  --clr-light-gray: #f9f9f9;
+  --clr-dark-blue: #414057;
+  --clr-light-blue: #8483a1;
+
+  --clr-heading: var(--clr-dark-blue);
+  --clr-text: var(--clr-light-blue);
+  --clr-background-member-position: var(--clr-dark-blue);
+  --clr-member-name: var(--clr-dark-blue);
+  --clr-member-position: #fff;
+
+  /* FONTS */
+  --font-family-body: "Poppins", sans-serif;
+  --font-family-heading: "PT serif", serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/***********/
+/* Layout */
+/***********/
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--font-family-body);
+  background-color: var(--clr-light-gray);
+}
+main {
+  max-width: 1440px;
+  padding: 3.5rem 1rem;
+  margin: auto;
+}
+
+/*****************/
+/* Hero Section */
+/****************/
+.hero-section h1 {
+  margin-bottom: 3rem;
+  font-family: var(--font-family-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--clr-heading);
+}
+.hero-section h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--clr-heading);
+}
+.hero-section p {
+  max-width: 40ch;
+  margin-bottom: 3rem;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  color: var(--clr-text);
+  line-height: 1.5;
+}
+
+/*****************/
+/* Accesibility */
+/****************/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/**********************/
+/* Team Members Grid */
+/**********************/
+.team-members-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  max-width: 1000px;
+}
+.crew-member-card {
+  display: flex;
+}
+.crew-member-card:nth-child(even) {
+  padding-top: 4.8rem;
+}
+.image-container {
+  max-width: 340px;
+}
+.image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+}
+.crew-member-card h3 {
+  padding-top: 0.7rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: bold;
+  color: var(--clr-member-name);
+}
+.crew-member-card p {
+  height: fit-content;
+  padding: 0.5rem 0.1rem;
+  padding-top: 0.4rem;
+  margin: 0;
+  font-size: 0.7rem;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color: var(--clr-member-position);
+  background-color: var(--clr-background-member-position);
+  box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+/***********/
+/* Footer */
+/***********/
+.footer {
+  padding: 5rem 0 2rem;
+  color: var(--clr-light-blue);
+  text-align: center;
+}
+.footer a {
+  text-decoration: none;
+  color: var(--clr-light-blue);
+  transition: color 0.3s ease;
+}
+.footer a:hover,
+.footer a:focus {
+  text-decoration: underline;
+  color: var(--clr-dark-blue);
+}
+
+/******************/
+/* Media queries */
+/******************/
+@media only screen and (min-width: 768px) {
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 70px;
+  }
+  .team-members-grid {
+    padding: 3rem 0;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .team-members-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .crew-member-card:nth-child(even) {
+    padding-top: 0;
+  }
+  .crew-member-card:nth-child(2),
+  .crew-member-card:nth-child(5) {
+    padding-top: 9.9rem;
+  }
+}
