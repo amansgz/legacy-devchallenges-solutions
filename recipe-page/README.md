@@ -10,7 +10,7 @@ This project displays a recipe in a clear and accesible format. The primary goal
 
 ## Links
 
-- **Live Site**: [recipe-page]()
+- **Live Site**: [recipe-page](https://recipe-page-css.netlify.app)
 
 ## Credits and Acknowledgements
 
