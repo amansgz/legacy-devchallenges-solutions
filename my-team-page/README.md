@@ -23,7 +23,7 @@ This project is a simple and responsive webpage that displays a team's informati
 
 ## Links
 
-- **Live Demo:** [my-team-page]()
+- **Live Demo:** [my-team-page](https://my-team-page-css.netlify.app)
 
 ---
 
