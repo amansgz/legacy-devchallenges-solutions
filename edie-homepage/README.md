@@ -18,7 +18,7 @@ This is my solution to the "Edie homepage" challenge on Devchallenges. The proje
 
 ## Links
 
-- **Live Site:** [Edie Homepage]()
+- **Live Site:** [Edie Homepage](https://edie-homepage-css.netlify.app)
 
 ---
 
