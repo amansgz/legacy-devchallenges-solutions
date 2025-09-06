@@ -1,0 +1,264 @@
+/********************************************/
+/* GLOBAL & UTILITY STYLES
+/*
+/* This section contains base styles for
+/* the entire document, including resets,
+/* typography, and the main layout container.
+/********************************************/
+:root {
+  --clr-primary-text: #4e5150;
+  --clr-accent: #fa9033;
+  --clr-bg-body: #fff;
+  --clr-bg-products: #f2f2f2;
+  --clr-bg-symbol: #e0e0e0;
+  --clr-line: #bdbdbd;
+  --clr-placeholder: #828282;
+
+  --ff-primary: "Montserrat", sans-serif;
+}
+/* Universal box-sizing reset */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Base font and layout for the body */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--ff-primary);
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
+  color: var(--clr-primary-text);
+  background-color: var(--clr-bg-body);
+}
+/* Main content area, centered and responsive */
+main {
+  flex: 1;
+  max-width: 1440px;
+  margin: auto;
+}
+/*********************/
+/* Checkout Section */
+/********************/
+.checkout-section h1 {
+  margin: 2rem;
+  margin-left: 1rem;
+  font-size: clamp(1.5rem, 5vw + 0.5rem, 2.5rem);
+}
+.checkout-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 1rem;
+}
+/*****************************************/
+/* PRODUCTS SECTION STYLES
+/*
+/* This section handles the styling for
+/* the product list, including individual
+/* items, images, prices, and the
+/* quantity counter 
+/*****************************************/
+.products-container {
+  padding: 2rem 1rem;
+  background-color: var(--clr-bg-products);
+  border-radius: 12px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* Single product item layout */
+.product {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+  margin-bottom: 2rem;
+}
+.image-container {
+  flex: 1;
+}
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: 12px;
+}
+.product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  flex: 1;
+}
+.product-details h3 {
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  font-weight: bold;
+}
+.prices {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.sale-price {
+  font-size: 1.2rem;
+  color: var(--clr-accent);
+}
+.line-through {
+  font-size: 1rem;
+  text-decoration: line-through;
+}
+
+.product-counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem;
+  border: 1px solid var(--clr-primary-text);
+  border-radius: 12px;
+}
+.count {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.increment-btn,
+.decrement-btn {
+  padding: 0 0.4em;
+  border: none;
+  font-size: 1.2rem;
+  background-color: var(--clr-bg-symbol);
+  border-radius: 8px;
+}
+
+.total-container {
+  margin-top: 1rem;
+}
+.shipping-container {
+  border-top: 1px solid var(--clr-line);
+  border-bottom: 1px solid var(--clr-line);
+}
+.shipping-container,
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 0;
+}
+.shipping-container h3,
+.total-container h3 {
+  font-weight: bold;
+  color: var(--clr-primary-text);
+}
+.shipping-container span,
+.total-container span {
+  font-size: 1.2rem;
+}
+/***************************************/
+/* FORM STYLES
+/*
+/* This section handles the styling for
+/* all form elements, including labels,
+/* inputs, icons, and the submit button.
+/***************************************/
+.form {
+  /* Flexbox layout for the form fields */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-heading {
+  margin: 1rem 0;
+  font-weight: bold;
+}
+.form label {
+  font-weight: bold;
+}
+/* Container for input field with icons */
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 0.5rem;
+}
+.input-container input,
+.input-container select {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--clr-placeholder);
+  text-indent: 20px;
+  border-radius: 8px;
+}
+input::placeholder {
+  color: var(--clr-placeholder);
+}
+select {
+  color: var(--clr-placeholder);
+}
+/* Position and size the SVG icon inside the input field */
+.input-container svg {
+  position: absolute;
+  left: 5px;
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+}
+/* 
+  * Styles for the country and postal code fields.
+  * These two fields are grouped to appear on the same line.
+*/
+.form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  gap: 15px;
+}
+.form-row .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+.form-checkbox-group {
+  display: flex;
+  gap: 0.8em;
+  margin: 1rem 0;
+}
+
+.btn-submit {
+  align-self: end;
+  width: 120px;
+  padding: 0.7rem;
+  margin: 1rem 0;
+  border: none;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--clr-accent);
+  border-radius: 12px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.3s ease;
+}
+.btn-submit:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/********************************************/
+/* MEDIA QUERIES
+/*
+/* This section contains responsive styles
+/* that adjust the layout for larger screens.
+/********************************************/
+@media (min-width: 768px) {
+  /* Switches the layout to a side-byside view for tablets and desktops */
+  .checkout-container {
+    flex-direction: row-reverse;
+  }
+  .form .form-heading:first-child {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+    <link rel="icon" href="./assets/devchallenges.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./javascript/app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="checkout-section">
+        <h1>Checkout</h1>
+        <div class="checkout-container">
+          <section>
+            <div class="products-container">
+              <article class="product">
+                <div class="image-container">
+                  <img src="./assets/images/photo1.png" alt="Vintage Backbag" />
+                </div>
+                <div class="product-details">
+                  <h3>Vintage Backbag</h3>
+                  <div class="prices">
+                    <span class="sale-price">$54.99</span>
+                    <span class="line-through">$94.99</span>
+                  </div>
+
+                  <div class="product-counter">
+                    <button class="decrement-btn">-</button>
+                    <span class="count"></span>
+                    <button class="increment-btn">+</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="product">
+                <div class="image-container">
+                  <img src="./assets/images/photo2.png" alt="Levi Shoes" />
+                </div>
+                <div class="product-details">
+                  <h3>Levi Shoes</h3>
+                  <div class="prices">
+                    <span class="sale-price">$74.99</span>
+                    <span class="line-through">$124.99</span>
+                  </div>
+                  <div class="product-counter">
+                    <button class="decrement-btn">-</button>
+                    <span class="count"></span>
+                    <button class="increment-btn">+</button>
+                  </div>
+                </div>
+              </article>
+
+              <div class="total-account">
+                <div class="shipping-container">
+                  <h3>Shipping</h3>
+                  <span class="shipping"></span>
+                </div>
+                <div class="total-container">
+                  <h3>Total</h3>
+                  <span class="total"></span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <form action="results.html" method="get" class="form">
+              <h2 class="form-heading">Contact Information</h2>
+
+              <label for="email">Email</label>
+              <div class="input-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="48"
+                  viewBox="0 -960 960 960"
+                  width="48"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302L140-685v465h680v-465L480-462Zm0-60 336-218H145l335 218ZM140-685v-55 520-465Z"
+                    fill="#828282"
+                  />
+                </svg>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email..."
+                  required
+                />
+              </div>
+
+              <label for="phone">Phone</label>
+              <div class="input-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="48"
+                  viewBox="0 -960 960 960"
+                  width="48"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M795-120q-116 0-236.5-56T335-335Q232-438 176-558.5T120-795q0-19.286 12.857-32.143T165-840h140q14 0 24 10t14 25l26.929 125.641Q372-665 369.5-653.5q-2.5 11.5-10.729 19.726L259-533q26 44 55 82t64 72q37 38 78 69.5t86 55.5l95-98q10-11 23.151-15T686-369l119 26q15 4 25 16.044T840-300v135q0 19.286-12.857 32.143T795-120ZM229-588l81-82-23-110H180q2 42 13.5 88.5T229-588Zm369 363q41 19 89 31t93 14v-107l-103-21-79 83ZM229-588Zm369 363Z"
+                    fill="#828282"
+                  />
+                </svg>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Enter your phone..."
+                  required
+                />
+              </div>
+
+              <h2 class="form-heading">Shipping address</h2>
+
+              <label for="fullName">Full name</label>
+              <div class="input-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="48"
+                  viewBox="0 -960 960 960"
+                  width="48"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M222-255q63-44 125-67.5T480-346q71 0 133.5 23.5T739-255q44-54 62.5-109T820-480q0-145-97.5-242.5T480-820q-145 0-242.5 97.5T140-480q0 61 19 116t63 109Zm257.814-195Q422-450 382.5-489.686q-39.5-39.686-39.5-97.5t39.686-97.314q39.686-39.5 97.5-39.5t97.314 39.686q39.5 39.686 39.5 97.5T577.314-489.5q-39.686 39.5-97.5 39.5Zm.654 370Q398-80 325-111.5q-73-31.5-127.5-86t-86-127.266Q80-397.532 80-480.266T111.5-635.5q31.5-72.5 86-127t127.266-86q72.766-31.5 155.5-31.5T635.5-848.5q72.5 31.5 127 86t86 127.032q31.5 72.532 31.5 155T848.5-325q-31.5 73-86 127.5t-127.032 86q-72.532 31.5-155 31.5ZM480-140q55 0 107.5-16T691-212q-51-36-104-55t-107-19q-54 0-107 19t-104 55q51 40 103.5 56T480-140Zm0-370q34 0 55.5-21.5T557-587q0-34-21.5-55.5T480-664q-34 0-55.5 21.5T403-587q0 34 21.5 55.5T480-510Zm0-77Zm0 374Z"
+                    fill="#828282"
+                  />
+                </svg>
+                <input
+                  type="text"
+                  name="fullName"
+                  id="fullName"
+                  placeholder="Enter your full name..."
+                  required
+                />
+              </div>
+
+              <label for="address">Address</label>
+              <div class="input-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="48"
+                  viewBox="0 -960 960 960"
+                  width="48"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M220-180h150v-250h220v250h150v-390L480-765 220-570v390Zm-60 60v-480l320-240 320 240v480H530v-250H430v250H160Zm320-353Z"
+                    fill="#828282"
+                  />
+                </svg>
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  placeholder="Your address..."
+                  required
+                />
+              </div>
+
+              <label for="city">City</label>
+              <div class="input-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="48"
+                  viewBox="0 -960 960 960"
+                  width="48"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M120-120v-558h247v-92l113-110 113 110v258h247v392H120Zm60-60h106v-106H180v106Zm0-166h106v-106H180v106Zm0-166h106v-106H180v106Zm247 332h106v-106H427v106Zm0-166h106v-106H427v106Zm0-166h106v-106H427v106Zm0-166h106v-106H427v106Zm247 498h106v-106H674v106Zm0-166h106v-106H674v106Z"
+                    fill="#828282"
+                  />
+                </svg>
+                <input
+                  type="text"
+                  name="city"
+                  id="city"
+                  placeholder="Your city..."
+                  required
+                />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="country">Country</label>
+                  <div class="input-container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="48"
+                      viewBox="0 -960 960 960"
+                      width="48"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-43-61v-82q-35 0-59-26t-24-61v-44L149-559q-5 20-7 39.5t-2 39.5q0 130 84.5 227T437-141Zm294-108q22-24 38.5-51t28-56.5q11.5-29.5 17-60.5t5.5-63q0-106-58-192.5T607-799v18q0 35-24 61t-59 26h-87v87q0 17-13.5 28T393-568h-83v88h258q17 0 28 13t11 30v127h43q29 0 51 17t30 44Z"
+                        fill="#828282"
+                      />
+                    </svg>
+                    <select name="countries" id="country">
+                      <option value="opt">Your country...</option>
+                      <option value="arg">Argentine</option>
+                      <option value="den">Denmark</option>
+                      <option value="fr">France</option>
+                      <option value="ita">Italy</option>
+                      <option value="usa">United States</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="postalCode">Postal Code</label>
+                  <div class="input-container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="48"
+                      viewBox="0 -960 960 960"
+                      width="48"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M240-417v-148H140v425h680v-425H360v-60h460q24 0 42 18t18 42v425q0 24-18 42t-42 18H140q-24 0-42-18t-18-42v-425q0-24 18-42t42-18h100v-255h300v160H300v303h-60ZM140-565v148-148 425-425Z"
+                        fill="#828282"
+                      />
+                    </svg>
+                    <input
+                      type="text"
+                      name="postalCode"
+                      id="postalCode"
+                      placeholder="Your postal code..."
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-checkbox-group">
+                <input type="checkbox" name="saveInfo" id="saveInfo" />
+                <label for="saveInfo">
+                  Save the information for next time
+                </label>
+              </div>
+
+              <button type="submit" class="btn-submit">Continue</button>
+            </form>
+          </section>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
