@@ -1,0 +1,120 @@
+:root {
+  --primary-text-color: #333333;
+  --secondary-text-color: #4f4f4f;
+  --accent-color: #ff6d5b;
+
+  --font-body: "Inconsolata", monospace;
+  --font-heading: "Space Mono", monospace;
+}
+/* General Styling */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: var(--font-body);
+  color: var(--primary-text-color);
+}
+
+/* Layout */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
+}
+main {
+  flex: 1;
+  align-content: center;
+}
+/* Header with main heading */
+.header {
+  padding-top: 1rem;
+}
+.header h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* Error Section with image and error description message*/
+.error-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 1rem 0;
+}
+.error-image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.error-description {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.error-description h2 {
+  max-width: 15ch;
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 700;
+}
+.error-description p {
+  max-width: 33ch;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: var(--secondary-text-color);
+}
+
+.home-link {
+  display: inline-block;
+  width: 224px;
+  padding: 1em 2em;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: var(--primary-text-color);
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+.home-link:hover,
+.home-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer {
+  padding: 1rem 0;
+  text-align: center;
+}
+.footer a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  transition: color 0.3s ease;
+}
+.footer a:hover,
+.footer a:focus {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  .error-section {
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
+  .error-image-container {
+    flex: 1;
+  }
+  .error-description {
+    flex: 1;
+    gap: 20px;
+  }
+}
