@@ -20,7 +20,7 @@ This project is a simple photo gallery designed as a challenge to practice the u
 
 ## Links
 
-- **Live Demo:** [my-gallery]()
+- **Live Demo:** [my-gallery](https://my-gallery-css.netlify.app)
 
 ---
 
